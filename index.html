@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background: #fff7fa;
+    padding:30px;
+}
+
+.container{
+    width:75%;
+    margin:auto;
+}
+
+.form-box{
+    background:white;
+    border:2px solid #f7c6d7;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+h1{
+    text-align:center;
+    font-size:55px;
+    color:#b01260;
+    margin-bottom:5px;
+    font-family:Georgia, serif;
+}
+
+h2{
+    text-align:center;
+    color:#7a1e5d;
+}
+
+p{
+    text-align:center;
+    margin-bottom:30px;
+    color:#d14a8c;
+    font-size:20px;
+}
+
+.card{
+    background:#ffe6f0;
+    border:2px solid #f3b6cb;
+    border-radius:18px;
+    padding:20px;
+    margin-top:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    text-align:left;
+    color:#c2185b;
+    margin-bottom:15px;
+}
+
+label{
+    color:#444;
+    font-weight:500;
+}
+
+input[type="text"],
+input[type="number"],
+select{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #e7c2d0;
+    border-radius:10px;
+    background:#fff;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin:10px;
+}
+
+button[type="submit"]{
+    background:  linear-gradient(to right, #ff4f8b, #ff9ac2);
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button[type="reset"]{
+    background:linear-gradient(to right, #cd98dc, #3a2d3b);
+    color:white;
+    border:2px solid #e91e63;
+    padding:15px 35px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    transform:scale(1.03);
+    transition:.3s;
+}
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    color:#d14a8c;
+    font-size:22px;
+    font-style:italic;
+}
+
+.card:nth-child(5),
+.card:nth-child(6),
+.card:nth-child(7){
+    width:32%;
+    display:inline-block;
+    vertical-align:top;
+    min-height:350px;
+}
+
+.card:nth-child(8),
+.card:nth-child(9){
+    width:48%;
+    display:inline-block;
+    vertical-align:top;
+}
+
+textarea{
+    width:100%;
+    height:120px;
+    border:1px solid #e7c2d0;
+    border-radius:10px;
+    padding:10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="">
+                <h1> 💄ELEGANT BEAUTY 👩</h1>
+                <h2> <i>Appointment form </h2></i>
+                <p>Book Your Glow Session✨ </p>
+
+                <div class="card">
+                   <h2>💖 1.CUSTOMER INFORMATION  </h2> <br>
+
+                    <label for="">Full Name  </label> <br>
+                    <input type="text" placeholder="Enter your Full Name ">  <br>
+
+                    <label for="">Phone Number </label> <br>
+                    <input type="number" placeholder="Enter Your Phone Number" >  <br>
+
+                    <label for=""> Age </label> <br>
+                    <input type="number" placeholder="Enter Your Age" >   <br>
+
+                    <label for=""> Gender</label> <br>
+                    <input type="radio" name="Gender" value="Male"> Male 
+                    <input type="radio" name="Gender" value="Female"> Female <br>
+                </div>
+
+                <div class="card">
+                    <h2>📋 2.SERVICE CATEGORY</h2>
+                    <label for="">Select Service Category</label>
+                    <select name="" id="">
+                        <option value="" selected disabled> --Select Service Category</option>
+                        <option value="Hair care">Hair care</option>
+                        <option value="Skin care">Skin care</option>
+                        <option value="Makeup">Makeup</option>
+                        <option value="Bridal Package">Bridal Package</option>
+                        <option value="Full Salon Package">Full Salon Package</option>
+                    </select>
+                </div>
+
+                <div class="card" >
+                    <h2>💇‍♀️ 3.HAIR SERVICES </h2>
+                    <label for="">(Select all that apply)</label> <br> <br>
+                    <input type="checkbox" name="Hair Services" value="Hair cut ">Hair cut <br>
+                    <input type="checkbox" name="Hair Services"value="Hair wash">Hair wash <br>
+                    <input type="checkbox" name="Hair Services"value="Hair coloring">         Hair  coloring <br>
+                    <input type="checkbox" name="Hair Services"value="Hair straightening">Hair straightening <br>
+                    <input type="checkbox" anme="Hair Services"value="Hair Treatment">Hair Treatment <br>
+                </div>
+
+                <div class="card" >
+                   <h2>💅 4.SKIN / FACIAL SERVICES</h2>
+                   <label for="">(select all that apply)</label> <br> <br>
+                   <input type="checkbox"name="Skin / Facial Services" value="Hydra Facial">Hydra Facial <br>
+                   <input type="checkbox"name="Skin / Facial Services"value="Clean up"> Clean up <br>
+                   <input type="checkbox"name="Skin / Facial Services"value="Acne Treatment"> Acne Treatment  <br>
+                   <input type="checkbox"name="Skin / Facial Services"value="whitening Treatment"> Whitening Treatment <br>
+                   <input type="checkbox"name="Skin / Facial Services"value="Face waxing"> Face waxing <br>
+
+                </div>
+
+                <div class="card"  >
+                    <h2>💄 5.MAKEUP OPTIONS </h2>
+                    <label for=""> Makeup Types *</label> <br>
+                    <input type="radio" name="Makeup options" value="Party Makeup">Party Makeup <br>
+                    <input type="radio"name="Makeup options" value="Bridal Makeup">Bridal Makeup <br>
+                    <input type="radio"name="Makeup options" value=" Light Makeup">Light Makeup <br>
+                    <label for="">Makeup Add-ons (Select all that apply)</label> <br>
+                    <input type="checkbox" name="Makeup Add-ons" value="Lashes">Lashes <br>
+                    <input type="checkbox" name="Makeup Add-ons" value="Foundation Upgrade">Foundation Upgrade <br>
+                    <input type="checkbox" name="Makeup Add-ons" value="Lips Styling">Lips Styling <br>
+
+                </div>
+                <div class="card"  >
+                    <h2>👰  6.BRIDAL PACKAGE</h2>
+                    <label for=""> --your choice-- </label> <br>
+                    <input type="radio" name="BRIDAL PACKAGE" value="Full Bridal Package">Full Bridal Package <br>
+                    <input type="radio"name="BRIDAL PACKAGE" value="Wedding Day Look">Wedding Day Look <br>
+                    <input type="radio"name="BRIDAL PACKAGE" value="Mehndi Look">Mehndi Look <br>
+                    <input type="radio"name="BRIDAL PACKAGE" value="Reception Look">Reception Look <br>
+                    
+                    
+                </div>
+                <div class="card" >
+                    <h2>⏰ 7.APPOINTMENT TIMING </h2>
+                    <label for=""> Select Preferred Time</label> <br>
+                    <select name="" id="">
+                        <option value="" selected disabled> --Select Time--</option>
+                        <option value="Morning">Morning</option>
+                        <option value="Afternoon">Afternoon</option>
+                        <option value="Evening">Evening</option>
+                    </select>
+                </div>
+
+                <div class="card">
+                    <h2>⭐ 8. EXTRA SERVICES </h2>
+                    <label for=""> (Select all that apply)</label> <br>
+                    <input type="checkbox" name="EXTRA SERVICES" value="Nail art">Nail art <br>
+                    <input type="checkbox" name="EXTRA SERVICES" value=" Massage">Massage <br>
+                    <input type="checkbox" name="EXTRA SERVICES" value="Eyebrow shaping">Eyebrow shaping <br>
+                    <input type="checkbox" name="EXTRA SERVICES" value=" Waxing"> Waxing <br>
+                </div>
+
+                <div class="card" >
+                    <h2>📝 9.ADDITIONAL NOTES </h2>
+                    <label for="">Special instructions/ any other request</label>
+                    <input type="text" placeholder="Type Your Massage here !">
+                </div>
+
+               
+                <button type="submit">📅 BOOK APPOINTMENT </button> &nbsp;<button type="reset"> 🔄 RESET FORM</button>
+            
+         <footer>
+            💓 we care for your beauty and happiness 💓
+         </footer>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
